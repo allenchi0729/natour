@@ -16,7 +16,9 @@
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-            <label for="navi-toggle" class="navigation__button">MENU</label>
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
 
             <div class="navigation__background">&nbsp;</div>
 
@@ -30,9 +32,6 @@
                 </ul>
             </nav>
         </div>
-
-
-
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="logo" class="header__logo">
@@ -43,7 +42,7 @@
                     <!-- <span class="heading-primary-main-sec"></span> -->
                     <span class="heading-primary--sub">the IPC Master</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Discover Our Products</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover Our Products</a>
             </div>
         </header>
         
@@ -118,7 +117,7 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most popular tours
@@ -150,7 +149,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now!</a>
+                                    <a href="#popup" class="btn btn--white">Book Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +179,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$497</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now!</a>
+                                    <a href="#popup" class="btn btn--white">Book Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +209,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$897</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now!</a>
+                                    <a href="#popup" class="btn btn--white">Book Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -335,6 +334,24 @@
                 </div>
             </div>
         </footer>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary">Start Booking Now!</h2>
+                    <h3 class="heading-tertiary" style="margin-bottom: 10px;">Important &ndash; Please read these terms before booking.</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus hic commodi iste mollitia veniam laborum fugiat explicabo dolor. Incidunt accusamus hic commodi iste mollitia veniam laborum fugiat explicabo dolor. Accusamus hic commodi iste mollitia veniam laborum fugiat explicabo dolor.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus hic commodi iste mollitia veniam laborum fugiat explicabo dolor. Incidunt accusamus hic commodi iste mollitia veniam laborum fugiat explicabo dolor. Accusamus hic commodi iste mollitia veniam laborum fugiat explicabo dolor.
+                    </p>
+                    <a href="#" class="btn btn--green">Book Now!</a>
+                </div>
+            </div>
+        </div>
         <!-- <section class="grid-test">
             <div class="row">
                 <div class="col-1-of-2">
