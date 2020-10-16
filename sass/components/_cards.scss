@@ -13,10 +13,16 @@
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba(black, .15);
+
+        @supports(-webkit-backface-visibility: hidden) or (backface-visibility: hidden) {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
 
         &--front {
             background-color: #fff;

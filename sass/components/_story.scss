@@ -23,13 +23,19 @@
         width: 15rem;
         height: 15rem;
         float: left;
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%); // must have float, width, height
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
         // don't use margin here, use transform
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%); // must have float, width, height
+            border-radius: none;
+        }
 
         @include respond(phone) {
             transform: skewX(0);
