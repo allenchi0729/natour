@@ -39,3 +39,8 @@ body {
         padding: 0px;
     }
 }
+
+::selection {
+    background-color: $color-green-light;
+    color: $color-white;
+}
